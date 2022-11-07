@@ -8,12 +8,12 @@ const renew = () => {
   value.textContent = counterValue;
 };
 
-const valueDecrement = (event) => {
+const valueDecrement = () => {
   counterValue -= 1;
   renew();
 };
 
-const valueIncrement = (event) => {
+const valueIncrement = () => {
   counterValue += 1;
   renew();
 };

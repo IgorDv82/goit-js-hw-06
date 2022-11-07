@@ -17,6 +17,7 @@ const list = document.querySelector(".gallery");
 list.style.display = "flex";
 list.style.flexWrap = "wrap";
 list.style.gap = "30px";
+list.style.listStyle = "none";
 
 const liItems = images
   .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}" width="600"></li>`)

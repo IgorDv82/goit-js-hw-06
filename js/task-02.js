@@ -15,9 +15,3 @@ for (let i = 0; i < ingredients.length; i += 1) {
   newLi.class = "item";
   list.append(newLi);
 }
-
-// const items = ingredients
-//   .map((ingredient) => `<li class="item">${ingredient}</li>`)
-//   .join("");
-
-// list.innerHTML = items;
