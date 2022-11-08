@@ -10,18 +10,24 @@ const refs = {
 };
 
 let number = 0;
+let size = 30;
+let lastSize = 0;
 
 const listener = (event) => {
   number = event.currentTarget.value;
 };
 
+const renew = () => {
+  lastSize = size;
+};
+
 const createBoxes = (event) => {
-  let size = 30;
   for (let i = 1; i <= number; i += 1) {
+    renew();
     let color = getRandomHexColor();
     const box = document.createElement("div");
-    box.style.width = size + "px";
-    box.style.height = size + "px";
+    box.style.width = lastSize + "px";
+    box.style.height = lastSize + "px";
     box.style.backgroundColor = color;
     refs.place.append(box);
     size += 10;

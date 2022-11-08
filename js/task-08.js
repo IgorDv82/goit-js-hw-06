@@ -14,8 +14,7 @@ function resultSubmit(event) {
       password: password.value,
     };
     console.log(userInfo);
+    event.currentTarget.reset();
   }
-
-  event.currentTarget.reset();
 }
 form.addEventListener("submit", resultSubmit);
